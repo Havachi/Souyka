@@ -1,0 +1,64 @@
+.sessionSection{
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.sessionSection h4{
+    display: inline-block;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-left: 20px;
+
+    border: solid 2px dimgray;
+    border-bottom-width: 3px;
+    border-radius: 7px;
+
+    color: dimgray;
+    font-weight: bold;
+
+    transition: border-color .5s, color .5s, background-color .5s;
+}
+
+.sessionSection h4:hover{
+    background-color: rgba(150, 130, 215, .1);
+
+    border-color: #9682d7;
+
+    color: #9682d7;
+
+    transition: border-color .2s, color .2s, background-color .2s;
+}
+
+/*.loginIcon{
+	vertical-align: middle;
+
+	height: 15px;
+
+	background-image: url("../img/login-icon.png");
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+
+	opacity: 1;
+
+	transition: opacity .5s;
+}
+
+.sessionSection h4:hover .loginIcon{
+	background-image: url("../img/login-hover-icon.png");
+
+	opacity: 1;
+
+	transition: opacity .2s;
+}*/
+
+
+
+@media (max-width: 1000px) {
+    .sessionSection{
+        display: none;
+    }
+}

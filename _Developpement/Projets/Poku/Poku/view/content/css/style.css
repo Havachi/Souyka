@@ -1,0 +1,45 @@
+/*
+colors :
+purple - 9682d7 - 150, 130, 215
+wangenried-blue - 2874b2 - 40, 116, 178
+ */
+
+/* The container <div> - needed to position the dropdown content */
+
+body{
+	width: auto;
+	height:auto;
+
+    margin: 0px;
+
+    padding: none;
+
+    background-image: url("../img/8ec40cd34df3f3d29aa790f3c3c55f1d.jpg");
+    background-size: 200px auto;
+
+    font-family: Calibri;
+}
+
+body a{
+    text-decoration: none;
+}
+
+section{
+	margin: none;
+}
+
+section a{
+	color: rgba(150, 130, 215);
+
+	transition: color .5s;
+}
+
+section a:hover{
+	color: rgba(90, 70, 165);
+
+	transition: color .2s;
+}
+
+.content{
+	margin: none;
+}

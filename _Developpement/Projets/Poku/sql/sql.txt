@@ -1,0 +1,11 @@
+function getPseudo($userPseudo)
+{
+    $strgSeparator = '\'';
+
+    $pseudoQuery = 'SELECT pseudo FROM users WHERE code='.$strgSeparator.$userPseudo.$strgSeparator.'AND active=1';
+
+    require 'model/dbConnector.php';
+    $results = executeQuerySelect($pseudoQuery);
+
+    return $results;
+}

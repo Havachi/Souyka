@@ -1,0 +1,56 @@
+MLD
+	1	dans la table "joueurs"
+	2	"sponsors_id_sponsor"
+	3	"id_sponsor" de la table "sponsors"
+------------------------------------------------------------------------------------------------------
+	1	oui
+	2	non
+	3	oui
+	4	non
+	5	oui
+_______________________________________________________________________________________________
+
+Requêtes
+	n1	inner join	uniquement les joueurs sponsorisés	
+	n2	left join	uniquement les joueurs
+	n3	right join	uniquement les sponsors
+_______________________________________________________________________________________________
+
+Ex
+	1
+	select joueurs.prenom_joueur, joueurs.nom_joueur, sponsors.nom_sponsor  from joueurs
+LEFT JOIN sponsors on joueurs.sponsors_id_sponsor = sponsors.id_sponsor
+WHERE sponsors.id_sponsor IS NULL;
+
+	2
+	select joueurs.prenom_joueur, joueurs.nom_joueur, sponsors.nom_sponsor  from joueurs
+right JOIN sponsors on joueurs.sponsors_id_sponsor = sponsors.id_sponsor
+WHERE joueurs.prenom_joueur IS NULL and joueurs.nom_joueur is null;
+
+	3
+	select joueurs.prenom_joueur, joueurs.nom_joueur, sponsors.nom_sponsor  from sponsors
+right JOIN joueurs on joueurs.sponsors_id_sponsor = sponsors.id_sponsor;
+------------------------------------------------------------------------------------------------------
+	4
+	(
+select joueurs.prenom_joueur, joueurs.nom_joueur, sponsors.nom_sponsor  from joueurs
+right JOIN sponsors on joueurs.sponsors_id_sponsor = sponsors.id_sponsor
+)
+union
+(
+select joueurs.prenom_joueur, joueurs.nom_joueur, sponsors.nom_sponsor  from joueurs
+left JOIN sponsors on joueurs.sponsors_id_sponsor = sponsors.id_sponsor
+);
+	
+	5
+	(
+select joueurs.prenom_joueur, joueurs.nom_joueur, sponsors.nom_sponsor  from joueurs
+right JOIN sponsors on joueurs.sponsors_id_sponsor = sponsors.id_sponsor
+)
+union
+(
+select joueurs.prenom_joueur, joueurs.nom_joueur, sponsors.nom_sponsor  from joueurs
+left JOIN sponsors on joueurs.sponsors_id_sponsor = sponsors.id_sponsor
+)
+where joueurs.prenom_joueur is null
+or sponsors.nom_sponsor is null;

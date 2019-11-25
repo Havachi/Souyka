@@ -1,0 +1,53 @@
+.headerSection{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.headerSection .navbar{
+}
+
+.headerBrand{
+    position: absolute;
+    width: 250px;
+}
+
+.headerBrandLogo{
+    float: left;
+
+    height: 80px;
+
+    margin: 6px;
+}
+
+.headerBrandName{
+    float: left;
+    margin-top: 12px;
+    margin-left: 10px;
+    color: #2874b2;
+}
+
+/*@media (max-width: 1000px) {
+
+    .headerBrand{
+    }
+
+    .headerBrandLogo{
+        float: left;
+
+        height: 50px;
+
+        margin: 6px;
+    }
+
+    .headerBrandName{
+        float: left;
+
+        margin-top: 15px;
+        margin-left: 5px;
+
+        color: #2874b2;
+        font-size: 10px;
+    }
+}*/

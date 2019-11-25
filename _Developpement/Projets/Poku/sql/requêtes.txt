@@ -1,0 +1,72 @@
+SELECT userEmailAddress
+FROM users
+INNER JOIN rents ON users.id = rents.idUser
+
+USERS
+{
+
+SELECT countries.name
+FROM countries
+INNER JOIN users on countries.id = users.country
+
+}
+
+
+
+ART
+{
+
+SELECT status.name
+FROM status
+INNER JOIN art on status.id = art.status
+
+SELECT studios.name
+FROM studios
+INNER JOIN art on studios.id = art.studio
+
+SELECT magazines.name
+FROM magazines
+INNER JOIN art on magazines.id = art.magazine
+
+SELECT artTypes.name
+FROM artTypes
+INNER JOIN art on artTypes.id = art.type
+
+}
+
+
+
+BLOGS
+{
+
+SELECT users.pseudo
+FROM users
+INNER JOIN blogs on users.id = blogs.userId
+
+SELECT lang.name
+FROM lang
+INNER JOIN blogs on lang.id = blogs.langId
+
+SELECT blogTypes.name
+FROM blogTypes
+INNER JOIN blogs on blogTypes.id = blogs.blogTypeId
+
+}
+
+
+
+CLUBS
+{
+
+SELECT countries.name
+FROM countries
+INNER JOIN users on countries.id = clubs.country
+
+SELECT art.name
+FROM art
+INNER JOIN clubs on art.id = clubs.aboutId
+
+}
+
+
+

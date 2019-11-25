@@ -1,0 +1,45 @@
+.searchDropdownList{
+    outline: none;
+    border: none;
+}
+
+.searchbar{
+	display: inline-block;
+
+	padding-right: 10px;
+
+	margin-left: 20px;
+
+	height: 37px;
+
+	background-color: gainsboro;
+
+	border: solid 2px dimgray;
+	border-top-width: 3px;
+	border-radius: 20px;
+}
+
+.searchbarImg{
+	position: absolute;
+	margin: none;
+}
+
+.searchbarTxt{
+	margin: none;
+	margin-left: 35px;
+	margin-top: 10px;
+
+	border: none;
+
+	background: none;
+
+	color: dimgray;
+}
+
+
+
+@media (max-width: 1000px) {
+    .searchbar{
+        display: none;
+    }
+}

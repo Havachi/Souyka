@@ -1,0 +1,113 @@
+.ham-menu-icon{
+    display: none;
+}
+
+.navbar{
+    text-align: center;
+    display: inline-block;
+    margin: 17px;
+    margin-right: -200px;
+}
+
+.navbarSection {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navbarSection h4{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 40px;
+    padding-right: 10px;
+    font-size: large;
+    color: dimgray;
+    border-bottom: solid 2px rgba(0,0,0,0);
+    transition: color 0.5s, border-bottom 0.5s;
+}
+
+.navbarSection:hover h4{
+	color: #9682d7;
+    border-bottom: solid 2px #9682d7;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.navbarDropdownContent {
+    display: none;
+
+    position: absolute;
+
+    min-width: 150px;
+
+    margin: auto;
+
+    background-color: whitesmoke;
+    border-radius: 7px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
+    text-align: left;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.navbarDropdownContent a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: dimgray;
+    transition: background-color .5s;
+}
+
+/* Change color of dropdown links on hover */
+.navbarDropdownContent a:hover {
+    color: #9682d7;
+    background-color: rgba(150, 130, 215, .2);
+    transition: background-color .2s;
+}
+
+.navbarSection:hover{
+}
+
+/* Show the dropdown menu on hover */
+.navbarSection:hover .navbarDropdownContent {
+    display: block;
+}
+
+
+
+/*@media (max-width: 1000px) {
+    .ham-menu-icon{
+        display: inline-block;
+
+        position: absolute;
+        right: 120px;
+
+        margin-right: -100px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        height: 40px;
+
+        cursor: pointer;
+    }
+
+    .navbarSection{
+        display: none;
+
+        width: 100%;
+        height: 200px;
+
+        background-color: red;
+    }
+
+    .ham-menu-icon:hover .navbarSection{
+        display: inline-block;
+    }
+
+    .navbar{
+        display: inline-block;
+
+        height: 37px;
+    }
+}*/

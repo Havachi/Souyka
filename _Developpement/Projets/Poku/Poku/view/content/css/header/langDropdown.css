@@ -1,0 +1,38 @@
+.langDropdownSection{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.langDropdownSection:hover{
+}
+
+.langDropdownContent{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.langDropdownContent a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.langDropdownContent a:hover {
+}
+
+/* Show the dropdown menu on hover */
+.langDropdownSection:hover .langDropdownContent {
+    display: block;
+}
+
+
+
+@media (max-width: 1000px) {
+    .langDropdownSection{
+        display: none;
+    }
+}
